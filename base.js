@@ -93,9 +93,9 @@ function start() {
         const numeral = n => encodeBijective(n, result.digits);
         error.textContent = "";
         input.setAttribute("aria-invalid", "false");
-        renderLines("zone", "Zones:", result.zones.map(z => `Zn-${z.symbol} (value ${z.value})`));
+        renderLines("zone", "Zones:", result.zones.map(z => `Zn-${z.symbol}`));
         renderLines("gate", "Gates:", result.zones.map(z =>
-            `Zn-${z.symbol}: Gt-${numeral(z.gate)} => Zn-${numeral(z.destination)}`));
+            `Gt-${numeral(z.gate)} => Zn-${numeral(z.destination)}`));
         const pairs = result.syzygies.map(p =>
             `${numeral(p.big)}::${numeral(p.small)} => ${numeral(p.current)}`);
         if (result.unpaired !== null) pairs.push(`Unpaired: Zn-${numeral(result.unpaired)}`);
