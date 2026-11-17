@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DIY Bijective Numogram</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="cypherpunk_1028.png" sizes="any" type="image/svg+xml">
+        <!-- Place favicon.ico in the root directory -->
+
+        <style type="text/css">
+         @-ms-viewport { width: device-width; } @-o-viewport { width: device-width; } @viewport { width: device-width; initial-scale=1.0; }
+         body {font-size: 1.0em; font-family: "Iowan Old Style", "Noto Serif", Georgia, Palatino, Serif, Arial; line-height: 140%; color: #000000;}
+         h1 {text-align: center; font-size: 155%; font-variant: small-caps; line-height: 100%; max-width: 600px; margin-bottom: 10px; margin-top: 0.75em; margin-left: auto; margin-right: auto;}
+         h2 {text-align: center; font-size: 115%; line-height: 140%; max-width: 600px; padding-top: 12px; margin-bottom: 25px; margin-left: auto; margin-right: auto;}
+         a {font-size: 100%; font-weight: bold; font-family: "Iowan Old Style", "Noto Serif", Georgia, Palatino, Serif, Arial; line-height: 140%; outline: none; text-decoration: none; color: #326891;}
+         a:hover {text-decoration: underline; opacity: 1; transition: opacity 0s; -moz-transition: opacity 0s; -webkit-transition: opacity 0s;}
+         nav, div, article {text-indent: 0px; margin-bottom: 0px; margin-top: 0px; max-width: 600px; margin-left: auto; margin-right: auto; vertical-align:top; position:relative;}
+         p {text-indent: 2.75em; text-align: justify; font-variant-ligatures: normal; margin-left: 0px; margin-bottom: 0px; margin-top: 0px;}
+         p.i0 {text-indent: 0px;}
+         p.i1 {margin-bottom: 7px;}
+         img {display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.2em;}
+         #redtext {color:red;}
+         #blutext {color:blue;}
+         #gretext {color:green;}
+        </style>
+    </head>
+
+    <body>
+        <nav style=" margin-bottom: 2em; margin-left: auto; margin-right: auto; text-align: center;">
+            <div style="white-space: nowrap; position: relative; float: left; text-align: left;"><a href="index.html">◄ Bijective Gramculator</a></div>&nbsp;<div style="white-space: nowrap; position: relative; float: right; text-align: right;"><a href="https://www.numogram.xyz/">More resources ►</a></div>
+        </nav>
+        <h1>Fundamentals of the Bijective Numogram</h1>
+        <h2>Calculating the numogram by hand</h2>
+        <article>
+            <p class="i1">For an alphabet of b unique characters, assign values 1 through b in the order entered. The first character always means 1. The final character means b. There is no zero digit; zero is represented by an empty numeral, and is not a zone.</p>
+            <p class="i1">Pair the outermost zones inward to form syzygies: b::1, (b−1)::2, and so on. Each pair sums to b+1 in ordinary integer values. The current runs to the zone whose value is the larger value minus the smaller. In odd bases, the middle zone is left unpaired; pairing it with itself would produce zero, which is not a zone.</p>
+            <p class="i1">The gate of a zone with value n is its triangular number n(n+1)/2. Express that number in the bijective alphabet, then add the values of its digits. Repeat, converting each sum back to bijective notation, until a single digit remains. That digit is the destination zone. Base 1 has only one zone and a gate to itself.</p>
+            <p class="i1">For example, use the base-10 alphabet 123456789A, where A means ten. Its syzygies are A::1 → 9, 9::2 → 7, 8::3 → 5, 7::4 → 3, and 6::5 → 1. Zone 4 has Gate A (value ten), which points to Zone A. Zone A has Gate 55 (value fifty-five): 5+5 = ten, written A, so it also points to Zone A.</p>
+            <p class="i1">With the alphabet 0123456789, the same values have different labels: 0 means one, 9 means ten, and 00 means eleven. Zone 3 (value four) has Gate 9 (value ten), pointing to Zone 9. Digit sums use assigned values, not the familiar meanings of the printed symbols.</p>
+            <p class="i1">Bijective notation determines the number representation. Pairing zones to sum to b+1 is the convention used here to extend the original calculator’s outermost-inward pairing rule.</p>
+        </article>
+    </body>
+</html>
