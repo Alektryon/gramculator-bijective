@@ -11,3 +11,5 @@ Gate values are triangular numbers n(n+1)/2, encoded bijectively. Gate destinati
 All arithmetic uses BigInt. The original layout, alphabet examples, artwork and license are retained. The original artwork describes the ordinary Numogram and is not used in the updated guide. The page uses an optional external Bulma stylesheet; calculations work without it.
 
 Run arithmetic and rendering checks with: node test.cjs
+
+Entirely based on [Gramculator](https://github.com/VitorGoatman/gramculator) by [VitorGoatman](https://github.com/VitorGoatman).
