@@ -31,7 +31,7 @@
         <h2>A tool for calculating <a href="https://www.numogram.xyz/">numograms</a> with different bijective numerical bases.</h2>
         <p>
             <label id="inputAlphabetLength" class="label" for="input">Enter numerical alphabet below:</label>
-            <input type="text" class="input" id="input" aria-describedby="notation-note error" value="0123456789" /><br /><br />
+            <input type="text" class="input" id="input" aria-describedby="notation-note error" value="123456789X" /><br /><br />
 			<button onclick="start()" class="button is-info">Calculate!</button>
             <br /><br />
             <p id="notation-note" class="notation-note">Characters have values 1 through the base, in the order entered.
@@ -48,12 +48,12 @@
             <p>Copy an alphabet below into the input. These are symbol orders; values always start at 1.</p>
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 2 (<a href="https://en.wikipedia.org/wiki/Binary_number">binary</a>)</label>
+					<label class="label">Bijective Base 2 (<a href="https://en.wikipedia.org/wiki/Binary_number">binary</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="01" readonly id="base2">
+							<input class="input" type="text" value="12" readonly id="base2">
 						</div>
 					</div>
 				</div>
@@ -61,12 +61,12 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 4 (<a href="https://en.wikipedia.org/wiki/Quaternary_numeral_system">quaternary</a>)</label>
+					<label class="label">Bijective Base 4 (<a href="https://en.wikipedia.org/wiki/Quaternary_numeral_system">quaternary</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="0123" readonly>
+							<input class="input" type="text" value="1234" readonly>
 						</div>
 					</div>
 				</div>
@@ -74,12 +74,12 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 8 (<a href="https://en.wikipedia.org/wiki/Octal">octal</a>)</label>
+					<label class="label">Bijective Base 8 (<a href="https://en.wikipedia.org/wiki/Octal">octal</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="01234567" readonly>
+							<input class="input" type="text" value="12345678" readonly>
 						</div>
 					</div>
 				</div>
@@ -87,12 +87,12 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 10 (<a href="https://en.wikipedia.org/wiki/Decimal">decimal</a>)</label>
+					<label class="label">Bijective Base 10 (<a href="https://en.wikipedia.org/wiki/Decimal">decimal</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="0123456789" readonly>
+							<input class="input" type="text" value="123456789X" readonly>
 						</div>
 					</div>
 				</div>
@@ -100,12 +100,12 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 12 (<a href="https://en.wikipedia.org/wiki/Dozenal">dozenal</a>)</label>
+					<label class="label">Bijective Base 12 (<a href="https://en.wikipedia.org/wiki/Dozenal">dozenal</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="0123456789↊↋" readonly>
+							<input class="input" type="text" value="123456789ABC" readonly>
 						</div>
 					</div>
 				</div>
@@ -113,12 +113,12 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 16 (<a href="https://en.wikipedia.org/wiki/Hexadecimal">hex</a>)</label>
+					<label class="label">Bijective Base 16 (<a href="https://en.wikipedia.org/wiki/Hexadecimal">hex</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="0123456789ABCDEF" readonly>
+							<input class="input" type="text" value="123456789ABCDEFG" readonly>
 						</div>
 					</div>
 				</div>
@@ -126,7 +126,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 22 (<a href="https://en.wikipedia.org/wiki/Hebrew_alphabet">Hebrew Alphabet</a>)</label>
+					<label class="label">Bijective Base 22 (<a href="https://en.wikipedia.org/wiki/Hebrew_alphabet">Hebrew Alphabet</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -139,7 +139,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 24 (<a href="https://en.wikipedia.org/wiki/Greek_alphabet">Greek Alphabet</a>)</label>
+					<label class="label">Bijective Base 24 (<a href="https://en.wikipedia.org/wiki/Greek_alphabet">Greek Alphabet</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -152,7 +152,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 24 (<a href="https://en.wikipedia.org/wiki/Elder_Futhark">Elder Futhark</a>)</label>
+					<label class="label">Bijective Base 24 (<a href="https://en.wikipedia.org/wiki/Elder_Futhark">Elder Futhark</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -165,7 +165,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 26 (<a href="https://en.wikipedia.org/wiki/English_alphabet">English Alphabet</a>)</label>
+					<label class="label">Bijective Base 26 (<a href="https://en.wikipedia.org/wiki/English_alphabet">English Alphabet</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -178,7 +178,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 27 (<a href="https://en.wikipedia.org/wiki/Greek_numerals">Greek Numerals</a>)</label>
+					<label class="label">Bijective Base 27 (<a href="https://en.wikipedia.org/wiki/Greek_numerals">Greek Numerals</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -191,7 +191,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 28 (<a href="https://en.wikipedia.org/wiki/Arabic_alphabet">Arabic Alphabet</a>)</label>
+					<label class="label">Bijective Base 28 (<a href="https://en.wikipedia.org/wiki/Arabic_alphabet">Arabic Alphabet</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -204,7 +204,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 32 (<a href="https://tools.ietf.org/html/rfc4648#section-6">RFC 4648</a>)</label>
+					<label class="label">Bijective Base 32 (<a href="https://tools.ietf.org/html/rfc4648#section-6">RFC 4648</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -217,7 +217,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 32 (<a href="https://philzimmermann.com/docs/human-oriented-base-32-encoding.txt">z-base-32</a>)</label>
+					<label class="label">Bijective Base 32 (<a href="https://philzimmermann.com/docs/human-oriented-base-32-encoding.txt">z-base-32</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -230,12 +230,12 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 36 (<a href="https://en.wikipedia.org/wiki/Base36">Alphanumeric</a>)</label>
+					<label class="label">Bijective Base 36 (<a href="https://en.wikipedia.org/wiki/Base36">Alphanumeric</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" readonly>
+							<input class="input" type="text" value="123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&" readonly>
 						</div>
 					</div>
 				</div>
@@ -243,7 +243,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 58 (<a href="https://en.wikipedia.org/wiki/Base58">bitcoin</a>)</label>
+					<label class="label">Bijective Base 58 (<a href="https://en.wikipedia.org/wiki/Base58">bitcoin</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -256,12 +256,12 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 62 (<a href="https://en.wikipedia.org/wiki/Base62">Base62</a>)</label>
+					<label class="label">Bijective Base 62 (<a href="https://en.wikipedia.org/wiki/Base62">Base62</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
 						<div class="control is-expanded">
-							<input class="input" type="text" value="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" readonly>
+							<input class="input" type="text" value="123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&" readonly>
 						</div>
 					</div>
 				</div>
@@ -269,7 +269,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 64 (<a href="https://tools.ietf.org/html/rfc4648#section-5">url safe</a>)</label>
+					<label class="label">Bijective Base 64 (<a href="https://tools.ietf.org/html/rfc4648#section-5">url safe</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
@@ -282,7 +282,7 @@
 
 			<div class="field is-horizontal">
 				<div class="field-label">
-					<label class="label">Base 64 (<a href="https://tools.ietf.org/html/rfc3548#section-3">url unsafe</a>)</label>
+					<label class="label">Bijective Base 64 (<a href="https://tools.ietf.org/html/rfc3548#section-3">url unsafe</a>)</label>
 				</div>
 				<div class="field-body">
 					<div class="field has-addons">
