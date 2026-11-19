@@ -98,7 +98,7 @@ function start() {
             `Gt-${numeral(z.gate)} –> ${numeral(z.destination)}`));
         const pairs = result.syzygies.map(p =>
             `${numeral(p.big)}::${numeral(p.small)} => ${numeral(p.current)}`);
-        if (result.unpaired !== null) pairs.push(`Unpaired: Zn-${numeral(result.unpaired)}`);
+        if (result.unpaired !== null) pairs.push(`${numeral(result.unpaired)}::${numeral(result.unpaired)}`);
         renderLines("syzy", "Syzygies:", pairs);
     } catch (err) {
         error.textContent = err.message;
